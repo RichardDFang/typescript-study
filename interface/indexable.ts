@@ -21,3 +21,9 @@ interface NotOkay {
     [x: string]: Animal;
     [y: number]: Dog;
 }
+
+interface NumberDictionary {
+    [index: number]: string,
+    length: number,
+    name: string
+}
