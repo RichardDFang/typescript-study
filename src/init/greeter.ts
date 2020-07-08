@@ -4,5 +4,5 @@ function greeter(person: string) {
 
 let user = "world";
 let errorUser = [1, 2, 3];
-greeter(user);
-greeter(errorUser);
+let world: string = greeter(user);
+document.querySelectorAll('.app')[0].innerHTML = world;

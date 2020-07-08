@@ -22,8 +22,8 @@
  * If 'padding' is a string, then 'padding' is appended to the left side.
  * If 'padding' is a number, then that number of spaces is added to the left side.
  */
-function padLeft(value: string, padding: string | number) {
+function padLeft1(value: string, padding: string | number) {
     // ...
 }
 
-let indentedString = padLeft("Hello world", true); // errors during compilation
+let indentedString = padLeft1("Hello world", 1); // errors during compilation

@@ -4,14 +4,9 @@ interface Point {
 }
 
 let p1: Point = { x: 10, y: 20 };
-p1.x = 5;
 
-let a: number[] = [1, 2, 3, 4, 5];
-let ro: ReadonlyArray<number> = a;
-
-a = ro;
-
-a = ro as number[];
+let test: number[] = [1, 2, 3, 4, 5];
+let ro: ReadonlyArray<number>;
 
 interface SquareConfig {
     color?: string;
@@ -19,7 +14,10 @@ interface SquareConfig {
 }
 
 function createSquare1(config: SquareConfig): { color: string; area: number } {
-    return ;
+    return {
+        color: '11234',
+        area: 200
+    };
 }
 
-let mySquare = createSquare1({ colour: "red", width: 100 });
+let mySquare1 = createSquare1({ color: "red", width: 100 });

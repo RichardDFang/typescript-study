@@ -2,29 +2,30 @@ interface Lengthwise {
     length: number;
 }
 
-function loggingIdentity<T extends Lengthwise>(arg: T): T {
+function loggingIdentity1<T extends Lengthwise>(arg: T): T {
     console.log(arg.length);  // Now we know it has a .length property, so no more error
     return arg;
 }
 
 class BeeKeeper {
-    hasMask: boolean;
+    hasMask: boolean | undefined;
 }
 
 class ZooKeeper {
-    nametag: string;
+    nametag: string | undefined;
 }
 
 class Animal {
-    numLegs: number;
+    numLegs: number | undefined;
 }
 
 class Bee extends Animal {
-    keeper: BeeKeeper;
+    keeper!: BeeKeeper;
 }
 
 class Lion extends ZooKeeper {
-    keeper: ZooKeeper;
+    keeper!: ZooKeeper;
+    numLegs!: number;
 }
 
 function createInstance<A extends Animal>(c: new () => A): A {

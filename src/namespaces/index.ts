@@ -20,7 +20,7 @@ namespace Validation {
 }
 
 // Some samples to try
-let strings = ["Hello", "98052", "101"];
+let strings1 = ["Hello", "98052", "101"];
 
 // Validators to use
 let validators: { [s: string]: Validation.StringValidator; } = {};

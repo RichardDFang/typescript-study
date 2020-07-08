@@ -12,7 +12,7 @@ interface ClockConstructor {
 }
 
 interface ClockInterface {
-    tick()
+    tick(): any
 }
 
 function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface {
@@ -27,7 +27,7 @@ class DigitalClock implements ClockInterface {
 }
 
 class AnalogClock implements ClockInterface {
-    constructor(h: string, m: number) {}
+    constructor(h: number, m: number) {}
     tick() {
         console.log('tick, tock')
     }

@@ -9,17 +9,17 @@
 // let myStr: string = myArray[0];
 
 
-class Animal {
-    name: string;
+class Animal2 {
+    name!: string;
 }
-class Dog extends Animal {
-    breed: string;
+class Dog1 extends Animal2 {
+    breed: string | undefined;
 }
 
 // 错误：使用'string'索引，有时会得到Animal!
 interface NotOkay {
-    [x: string]: Animal;
-    [y: number]: Dog;
+    [x: string]: Animal2;
+    [y: number]: Dog1;
 }
 
 interface NumberDictionary {

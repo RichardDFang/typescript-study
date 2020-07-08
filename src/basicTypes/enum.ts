@@ -4,7 +4,7 @@ enum Color {
     Green
 }
 
-let c: Color = Color.Green;
+let colorful: Color = Color.Green;
 
 let colorName: string = Color[2];
 

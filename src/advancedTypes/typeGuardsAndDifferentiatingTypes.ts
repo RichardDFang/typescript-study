@@ -1,22 +1,22 @@
 interface Bird {
-    fly();
-    layEggs();
+    fly():any;
+    layEggs():any;
 }
 
 interface Fish {
-    swim();
-    layEggs();
+    swim():any;
+    layEggs():any;
 }
 
 function getSmallPet(): Fish | Bird {
-    // ...
+    return <Bird>{};
 }
 
 let pet = getSmallPet();
 pet.layEggs(); // okay
-pet.swim();    // errors
+// pet.swim();    // errors
 
-if ((<Fish>pet).swim) {
+if ((<Fish>pet).swim !== undefined) {
     (<Fish>pet).swim();
 }
 else {

@@ -11,7 +11,7 @@ function getCounter(): Counter {
     return counter;
 }
 
-let c = getCounter();
-c(10);
-c.reset();
-c.interval = 1.5;
+let counter1 = getCounter();
+counter1(10);
+counter1.reset();
+counter1.interval = 1.5;

@@ -1,8 +1,8 @@
-interface Shape {
+interface Shape1 {
     color: string
 }
 
-interface Square extends Shape {
+interface Square extends Shape1 {
     sideLength: number
 }
 

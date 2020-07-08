@@ -14,5 +14,5 @@ interface Document {
     createElement(tagName: any): HTMLFormElement;
 }
 
-let a: Document;
-let b = a.createElement('span')
+let a!: Document;
+let b = a.createElement('span');
