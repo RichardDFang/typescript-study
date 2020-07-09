@@ -11,7 +11,7 @@ let deck1 = {
     }
 }
 
-let cardPicker = deck.createCardPicker();
+let cardPicker = deck1.createCardPicker();
 let pickedCard = cardPicker();
 
-alert("card: " + pickedCard.card + " of " + pickedCard.suit);
+// alert("card: " + pickedCard.card + " of " + pickedCard.suit);

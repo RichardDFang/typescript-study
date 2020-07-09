@@ -1,3 +1,6 @@
+import '../basicTypes/index'
+import '../function'
+
 function greeter(person: string) {
     return "Hello " + person;
 }

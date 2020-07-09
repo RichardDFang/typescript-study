@@ -18,7 +18,7 @@ function pickCard(x: any): any {
 
 let myDeck = [{ suit: "diamonds", card: 2 }, { suit: "spades", card: 10 }, { suit: "hearts", card: 4 }];
 let pickedCard1 = myDeck[pickCard(myDeck)];
-alert("card: " + pickedCard1.card + " of " + pickedCard1.suit);
+// alert("card: " + pickedCard1.card + " of " + pickedCard1.suit);
 
 let pickedCard2 = pickCard(15);
-alert("card: " + pickedCard2.card + " of " + pickedCard2.suit);
+// alert("card: " + pickedCard2.card + " of " + pickedCard2.suit);
