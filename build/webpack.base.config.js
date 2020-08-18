@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: {
-        'app': './src/init/greeter.ts'
+        'app': './src/index.ts'
     },
     output: {
         filename: 'app.js'
