@@ -11,3 +11,7 @@ let person: Person = {
     age: 35
 };
 let strings: string[] = pluck(person, ['name']); // ok, string[]
+
+
+let key: keyof Person;
+// console.log(key)

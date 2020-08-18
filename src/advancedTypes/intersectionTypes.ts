@@ -24,4 +24,15 @@ class ConsoleLogger implements Loggable {
 }
 var jim = extend(new Person("Jim"), new ConsoleLogger());
 var n = jim.name;
-jim.log();
+// jim.log();
+
+interface A1 {
+    a: number
+}
+interface B1 {
+    a: string
+}
+// let foo: A1 & B1 = {
+//     // a: 1,
+//     // b: '1'
+// }

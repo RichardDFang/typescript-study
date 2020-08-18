@@ -18,6 +18,6 @@ function area(s: Shape) {
     switch (s.kind) {
         case "square": return s.size * s.size;
         case "rectangle": return s.height * s.width;
-        case "circle": return Math.PI * s.radius ** 2;
+        // case "circle": return Math.PI * s.radius ** 2;
     }
 }

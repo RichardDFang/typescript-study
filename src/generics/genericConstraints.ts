@@ -7,6 +7,8 @@ function loggingIdentity1<T extends Lengthwise>(arg: T): T {
     return arg;
 }
 
+loggingIdentity1('1223');
+
 class BeeKeeper {
     hasMask: boolean | undefined;
 }
@@ -20,11 +22,11 @@ class Animal {
 }
 
 class Bee extends Animal {
-    keeper!: BeeKeeper;
+    keeper: BeeKeeper = new BeeKeeper;
 }
 
 class Lion extends ZooKeeper {
-    keeper!: ZooKeeper;
+    keeper: ZooKeeper = new ZooKeeper;
     numLegs!: number;
 }
 

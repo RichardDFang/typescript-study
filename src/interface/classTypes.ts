@@ -49,8 +49,6 @@ class A {
     private e = 2
 }
 
-console.log(1111111, A)
-
 interface B extends A {
 }
 
@@ -61,4 +59,3 @@ class H extends A implements B {
 class U extends A {
     d = 2
 }
-console.log(22222222222, new H())

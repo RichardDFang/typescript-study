@@ -4,3 +4,10 @@ type ReadonlyType<T> = {
 type PartialType<T> = {
     [P in keyof T]?: T[P];
 }
+
+interface obj {
+    a: 1
+}
+
+type ReadonlyObj = Readonly<obj>;
+type RecordObj = Record<'x' | 'y', obj>

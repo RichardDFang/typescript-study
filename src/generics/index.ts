@@ -1,3 +1,8 @@
+import './genericClasses'
+import './genericConstraints'
+import './genericTypeVariables'
+import './genericTypes'
+
 function identity<T>(arg: T): T {
     return arg;
 }

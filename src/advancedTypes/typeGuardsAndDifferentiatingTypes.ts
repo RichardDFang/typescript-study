@@ -9,10 +9,14 @@ interface Fish {
 }
 
 function getSmallPet(): Fish | Bird {
-    return <Bird>{};
+    return <Bird>{
+        layEggs: () => {},
+        fly: () => {}
+    };
 }
 
 let pet = getSmallPet();
+console.log(111111, pet)
 pet.layEggs(); // okay
 // pet.swim();    // errors
 
