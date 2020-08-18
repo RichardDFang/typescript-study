@@ -7,5 +7,5 @@ class Greeter {
         return "Hello, " + this.greeting;
     }
 }
-
 let greeter1 = new Greeter("world");
+console.log(greeter1)

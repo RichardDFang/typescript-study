@@ -27,3 +27,10 @@ interface NumberDictionary {
     length: number,
     name: string
 }
+
+let notOkay: NotOkay;
+let animal2: Animal2 = new Animal2();
+notOkay = {
+    'animal': animal2,
+    1: new Dog1()
+};

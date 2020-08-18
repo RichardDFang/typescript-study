@@ -1,5 +1,8 @@
 import '../basicTypes/index'
 import '../function'
+import '../enums'
+import '../interface/index'
+import '../class/index'
 
 function greeter(person: string) {
     return "Hello " + person;

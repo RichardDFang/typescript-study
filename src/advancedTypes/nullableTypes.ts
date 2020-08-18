@@ -16,11 +16,11 @@ f(1, undefined);
 
 // 可选属性
 
-class C {
+class GG {
     a?: number;
     b?: number;
 }
-let c = new C();
+let c = new GG();
 c.a = 12;
 c.a = undefined; // error, 'undefined' is not assignable to 'number'
 c.b = 13;

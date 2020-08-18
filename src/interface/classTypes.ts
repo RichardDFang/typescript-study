@@ -36,3 +36,29 @@ class AnalogClock implements ClockInterface {
 
 let digital = createClock(DigitalClock, 12, 18);
 let analog = createClock(AnalogClock, 7, 9);
+
+
+
+
+
+
+
+
+class A {
+    d = 1
+    private e = 2
+}
+
+console.log(1111111, A)
+
+interface B extends A {
+}
+
+class H extends A implements B {
+
+}
+
+class U extends A {
+    d = 2
+}
+console.log(22222222222, new H())

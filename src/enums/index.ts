@@ -15,6 +15,8 @@
 //     Square,
 // }
 
+// // console.log(ShapeKind)
+
 // interface Circle {
 //     kind: ShapeKind.Circle;
 //     radius: number;
@@ -25,11 +27,13 @@
 //     sideLength: number;
 // }
 
-// let c: Circle = {
+// let cos: Circle = {
 //     kind: ShapeKind.Circle,
 //     //    ~~~~~~~~~~~~~~~~ Error!
 //     radius: 100,
 // }
+
+// console.log(cos)
 
 // declare enum Enum {
 //     A = 1,

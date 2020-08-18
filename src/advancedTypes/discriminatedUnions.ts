@@ -1,4 +1,4 @@
-interface Square {
+interface Square1 {
     kind: "square";
     size: number;
 }
@@ -7,12 +7,12 @@ interface Rectangle {
     width: number;
     height: number;
 }
-interface Circle {
+interface Circle1 {
     kind: "circle";
     radius: number;
 }
 
-type Shape = Square | Rectangle | Circle;
+type Shape = Square1 | Rectangle | Circle1;
 
 function area(s: Shape) {
     switch (s.kind) {
