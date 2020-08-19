@@ -1,14 +1,10 @@
-namespace Animal10 {
-    let haveMuscles = true;
+declare namespace Animal10 {
+    let haveMuscles: Boolean;
 
-    export function animalsHaveMuscles() {
-        return haveMuscles;
-    }
+    export function animalsHaveMuscles(): Boolean
 }
 
-namespace Animal10 {
-    let haveMuscles = false;
-    export function doAnimalsHaveMuscles() {
-        return haveMuscles;  // Error, because haveMuscles is not accessible here
-    }
+declare namespace Animal11 {
+    let haveMuscles: Boolean;
+    export function doAnimalsHaveMuscles(): Boolean
 }
